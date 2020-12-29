@@ -5,11 +5,11 @@
  * Date: 22.12.2020
  */
 
-namespace App\AppBundle\Controller;
+namespace App\Controller;
 
-use App\PortalBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpClient\HttpClient;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -17,13 +17,13 @@ use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 /**
- * @Route("/instagram")
+ * @Route("/")
  */
-class InstagramController extends BaseController
+class IndexController extends AbstractController
 {
 	/**
 	 *
-	 * @Route("/", name="app_instagram")
+	 * @Route("/", name="index")
 	 */
 	public function indexAction(Request $request)
 	{
@@ -45,7 +45,7 @@ class InstagramController extends BaseController
 				$data[] = $this->getEmbedData($accessToken, $url);
 		}
 
-		return $this->render('@Portal/Instagram/index.html.twig', ['data' => $data]);
+		return $this->render('index.html.twig', ['data' => $data]);
 	}
 
 
