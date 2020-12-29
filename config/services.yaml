@@ -32,8 +32,8 @@ services:
 
 parameters:
 
-    facebook_stream_client_id: 851356285703053
-    facebook_stream_client_secret: ce06dda45bbd2c139a3b7bf581b018d0
-    facebook_client_id: 724064508217731
-    facebook_client_secret: 986c16eaa887d5da68adb1754618c76b
-    facebook_access_token: IGQVJYMWh1UFJoSEhLR1FDV1U2cjA3TjJDWDViaFlKLWhNY3VsUUxqZAk9sN2NfRGtRTHAwTmU4QllXWGJtVThBVmdwaHRhVElabG4wSTNHcVdMTDltSUVKeDhqYjFLRjQ4X1FybXRZAbmtuV1RBUjV5X3pPazhNeFQxeW53
+    facebook_stream_client_id: facebook_stream_client_id
+    facebook_stream_client_secret: facebook_stream_client_secret
+    facebook_client_id: facebook_client_id
+    facebook_client_secret: facebook_client_secret
+    facebook_access_token: facebook_access_token
